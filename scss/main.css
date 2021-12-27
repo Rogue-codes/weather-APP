@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Pushster&family=Roboto+Condensed:wght@400;700&family=Waterfall&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center;
+  background-size: cover;
+  color: blue;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+main .top {
+  padding: 5%;
+  height: 70vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .top .topLeft {
+  color: white;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+main .top .topLeft .time {
+  font-size: 2vw;
+  padding-bottom: 2%;
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topLeft .time {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+}
+
+main .top .topLeft .time .am-pm {
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topLeft .time .am-pm {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
+
+main .top .topLeft .date {
+  font-size: 1rem;
+  padding-bottom: 7%;
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topLeft .date {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+main .top .topLeft .parameter {
+  width: 30%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.226);
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid white 1px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topLeft .parameter {
+    height: auto;
+  }
+}
+
+main .top .topLeft .parameter .humidity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topLeft .parameter .humidity {
+    font-size: 1rem;
+    padding: 2%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topLeft .parameter {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+main .top .topRight {
+  color: white;
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topRight {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    padding-top: 8%;
+  }
+}
+
+main .top .topRight .timeZone {
+  font-style: 30px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topRight .timeZone {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+main .top .topRight .cordinates {
+  font-size: 15px;
+  font-weight: 900;
+  text-align: right;
+}
+
+@media screen and (max-width: 750px) {
+  main .top .topRight .cordinates {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .bottom {
+  background-color: rgba(4, 5, 5, 0.288);
+  height: 30vh;
+  padding: 2%;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  overflow-y: scroll;
+}
+
+main .bottom .todayForecast {
+  min-width: 40%;
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
+  height: 100%;
+  background-color: rgba(10, 5, 7, 0.205);
+  border: 1px solid white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  main .bottom .todayForecast {
+    margin-right: 34%;
+    width: 100%;
+    font-size: 1rem;
+    min-width: 80%;
+  }
+}
+
+main .bottom .todayForecast .monday {
+  padding: 5%;
+  font-size: 15px;
+  margin-bottom: 2%;
+  background-color: #20201f;
+  text-align: center;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  main .bottom .todayForecast .monday {
+    font-size: 1rem;
+  }
+}
+
+main .bottom .todayForecast .night {
+  padding: 5%;
+}
+
+main .bottom .todayForecast .day {
+  padding: 5%;
+}
+
+main .bottom .future {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+  border-radius: 5px;
+}
+
+main .bottom .future .futureForecast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+
+main .bottom .future .futureForecast .temp {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+main .bottom .future .futureForecast .tue {
+  padding-top: 5%;
+}
+/*# sourceMappingURL=main.css.map */

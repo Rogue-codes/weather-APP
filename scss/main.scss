@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Pushster&family=Roboto+Condensed:wght@400;700&family=Waterfall&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    color: blue;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+main{
+    height: 100vh;
+    width: 100%;
+
+
+    .top{
+        padding: 5%;
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .topLeft{
+            color: white;
+            flex: 6;
+
+
+            .time{
+                font-size: 2vw;
+                padding-bottom: 2%;
+                @media screen and (max-width:750px) {
+                    text-align: center;
+                    font-size: 2.7rem;
+                }
+
+                .am-pm{
+                    font-size: 1vw;
+                    @media screen and (max-width:750px) {
+                        text-align: center;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+
+            .date{
+                font-size: 1rem;
+                padding-bottom: 7%;
+                @media screen and (max-width:750px) {
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+
+            .parameter{
+                width: 30%;
+                height: 40%;
+                background-color: rgba(0, 0, 0, 0.226);
+                padding: 2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: solid white 1px;
+                border-radius: 5px;
+                @media screen and (max-width:750px) {
+                    height: auto;    
+                }
+
+                .humidity{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 20px;
+                    @media screen and (max-width:750px) {
+                        font-size: 1rem;
+                        padding: 2%;
+                    }
+                }
+                @media screen and (max-width:750px) {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+            }
+
+        }
+
+        .topRight{
+            color: white;
+            @media screen and (max-width:750px) {
+                flex: 4;
+                padding-top: 8%;
+            }
+
+            .timeZone{
+                font-style: 30px;
+                font-weight: 100;
+                @media screen and (max-width:750px) {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+            .cordinates{
+                font-size: 15px;
+                font-weight: 900;
+                text-align: right;
+                @media screen and (max-width:750px) {
+                    text-align: center;
+                }   
+            }
+        }
+
+        @media screen and (max-width:750px) {
+            flex-direction: column;
+        }
+    }
+    .bottom{
+        background-color: rgba(4, 5, 5, 0.288);
+        height: 30vh;
+        padding: 2%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        overflow-y: scroll;
+
+        .todayForecast{
+            min-width: 40%;
+            flex: 12;
+            height: 100%;
+            background-color: rgba(10, 5, 7, 0.205);
+            border: 1px solid white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            @media screen and (max-width:750px) {
+                margin-right: 34%;
+                width: 100%;
+                font-size: 1rem;
+                min-width: 80%;
+            }
+
+            .monday{
+                padding: 5%;
+                font-size: 15px;
+                margin-bottom: 2%;
+                background-color: rgb(32, 32, 31);
+                text-align: center;
+                border-radius: 50px;
+                @media screen and (max-width:750px) {
+                    font-size: 1rem;
+                }
+            }
+
+            .night{
+                padding: 5%;
+            }
+
+            .day{
+                padding: 5%;
+            }
+        }
+
+        .future{
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            align-items: center;
+            margin: 2%;
+            border-radius: 5px;
+
+            .futureForecast{
+                display: flex;
+                // position: absolute;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                margin: 2%;
+                border: solid 1px white;
+                border-radius: 5px;
+    
+                .temp{
+                    text-align: center;
+                    padding-bottom: 5%;
+                }
+
+                .tue{
+                    padding-top: 5%;
+                }
+            }
+        }
+    }
+}
+
