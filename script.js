@@ -75,11 +75,11 @@ function showWeatherData(data){
 </div>
 <div class="humidity">
     <p>Sunrise</p>
-    <p>${window.moment(sunrise * 1000).format('HH:mm a')}%</p>
+    <p>${window.moment(sunrise * 1000).format('HH:mm a')}</p>
 </div>
 <div class="humidity">
     <p>Sunset</p>
-    <p>${window.moment(sunset * 1000).format('HH:mm a')}%</p>
+    <p>${window.moment(sunset * 1000).format('HH:mm a')}</p>
 </div>`
 
 let otherDAyForecast = ''
