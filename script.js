@@ -1,11 +1,28 @@
 const timeEl = document.getElementById('time')
+
 const AM_PM_EL = document.getElementById('am-pm')
+
 const dateEl = document.getElementById('date')
+
 const timeZoneEl = document.getElementById('timeZone')
+
 const cordinatesEl = document.getElementById('cordinates')
+
 const currentWeatherItemsEl = document.getElementById('currentWeatherItems')
+
 const weatherForecastEl = document.getElementById('weatherForecast')
+
 const currentTempEl = document.getElementById('current-temp')
+
+const darkMode = document.getElementById('btn')
+
+const darkModeToggle = document.getElementById('btn')
+
+function switchMode(){
+    document.body.classList.toggle('darkBody')
+    darkModeToggle.classList.toggle('lgt')  
+}
+darkMode.addEventListener('click', switchMode)
 
 const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 
@@ -58,29 +75,30 @@ function showWeatherData(data){
     let {humidity,pressure,sunrise,sunset,wind_speed} = data.current
 
     timeZoneEl.innerHTML = data.timezone
+
     cordinatesEl.innerHTML = data.lat + 'N ' + data.lon + 'E'
 
     currentWeatherItemsEl.innerHTML = `
-    <div class="humidity">
-    <p>Humidity</p>
-    <p>${humidity}%</p>
-</div>
-<div class="humidity">
-    <p>Pressure</p>
-    <p>${pressure}%</p>
-</div>
-<div class="humidity">
-    <p>Wind Speed</p>
-    <p>${wind_speed}%</p>
-</div>
-<div class="humidity">
-    <p>Sunrise</p>
-    <p>${window.moment(sunrise * 1000).format('HH:mm a')}</p>
-</div>
-<div class="humidity">
-    <p>Sunset</p>
-    <p>${window.moment(sunset * 1000).format('HH:mm a')}</p>
-</div>`
+        <div class="humidity">
+            <p>Humidity</p>
+            <p>${humidity}%</p>
+        </div>
+        <div class="humidity">
+            <p>Pressure</p>
+            <p>${pressure}%</p>
+        </div>
+        <div class="humidity">
+            <p>Wind Speed</p>
+            <p>${wind_speed}%</p>
+        </div>
+        <div class="humidity">
+            <p>Sunrise</p>
+            <p>${window.moment(sunrise * 1000).format('HH:mm a')}</p>
+        </div>
+        <div class="humidity">
+            <p>Sunset</p>
+            <p>${window.moment(sunset * 1000).format('HH:mm a')}</p>
+        </div>`
 
 let otherDAyForecast = ''
 
@@ -92,7 +110,9 @@ data.daily.forEach((day, idx) => {
         </div>
         <div class="data">
             <div class="monday">${window.moment(day.dt * 1000).format('ddd')}</div>
+
             <div class="night">Night- ${day.temp.night}&#176; C</div>
+
             <div class="day">Day- ${day.temp.day}&#176; C</div>
         </div>
         
@@ -100,9 +120,13 @@ data.daily.forEach((day, idx) => {
     }else{
         otherDAyForecast += `
         <div class="futureForecast">
+        
             <div class="tue">${window.moment(day.dt * 1000).format('ddd')}</div>
+
             <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class="w-icon"" alt="">
+
             <div class="temp">${day.temp.night}&#176; C - ${day.temp.day}&#176; C</div>
+
         </div>
         
         `

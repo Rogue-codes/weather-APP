@@ -11,15 +11,20 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
-    color: blue;
     height: 100vh;
     width: 100%;
+}
+.darkBody{
+    background: url("https://images.pexels.com/photos/557782/pexels-photo-557782.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 main{
     position: relative;
     height: 100vh;
     width: 100%;
-
     .top{
         height: 60vh;
         width: 100%;
@@ -34,12 +39,10 @@ main{
         .topLeft{
             height: auto;
             flex: 8;
-
             @media screen and (max-width:750px) {
                 flex: 8;
             }
         }
-
         .time{
             font-size: 4vw;
             font-weight: 500;
@@ -47,7 +50,6 @@ main{
                 font-size: 2rem;
                 text-align: center;
             }
-
             #am-pm{
                 font-size: 2vw;
                 @media screen and (max-width:750px) {
@@ -62,7 +64,6 @@ main{
                 font-size: 1.5rem;
                 text-align: center;
             }
-
         }
         .parameter{
             background-color: rgba(19, 20, 20, 0.363);
@@ -71,12 +72,10 @@ main{
             width: 30%;
             padding: 2%;
             margin-top: 1%;
-
             @media screen and (max-width:750px) {
                 width: 80%;
                 margin-left: 10%;
             }
-
             .humidity{
                 font-size: 1vw;
                 display: flex;
@@ -110,11 +109,8 @@ main{
                     text-align: center;
                 }
             }
-
         }
     }
-
-
     .bottom{
         color: white;
         background-color: rgba(10, 26, 26, 0.356);
@@ -126,7 +122,6 @@ main{
         align-items: center;
         overflow-x: scroll;
         overflow-y: hidden;
-
         .todayForecast{
             height: 100%;
             width: 20%;
@@ -152,7 +147,6 @@ main{
             }
             .data{
                 padding: 2%;
-
                 .night{
                     font-size: 0.9rem;
                 }
@@ -170,7 +164,6 @@ main{
         .future{
             display: flex;
             height: 80%;
-
             .futureForecast{
                 background-color: rgba(22, 20, 21, 0.466);
                 border-radius: 15px;
@@ -181,7 +174,6 @@ main{
                 justify-content: center;
                 align-items: center;
                 padding: 5%;
-
                 .temp{
                     font-size: 1vw;
                     text-align: center;
@@ -192,4 +184,32 @@ main{
             }
         }
     }
+}
+.btn{
+    position: fixed;
+    top: 30vh;
+    left: 95%;
+    z-index: 10;
+    cursor: pointer;
+    padding: 1%;
+    background: url("https://img.icons8.com/material-sharp/50/000000/do-not-disturb-2.png") center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    border: none;
+    @media screen and (max-width:750px) {
+        padding: 4%;
+        top: 2vh;
+        left: 90%;
+    }
+}
+.lgt{
+    background: url("https://img.icons8.com/material-outlined/50/000000/sun.png") center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    border: none;
+    background-color: #e4ecf9;
 }

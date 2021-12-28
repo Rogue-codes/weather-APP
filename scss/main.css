@@ -10,9 +10,13 @@
 body {
   background: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center;
   background-size: cover;
-  color: blue;
   height: 100vh;
   width: 100%;
+}
+
+.darkBody {
+  background: url("https://images.pexels.com/photos/557782/pexels-photo-557782.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat center center;
+  background-size: cover;
 }
 
 main {
@@ -273,5 +277,32 @@ main .bottom .future .futureForecast .temp {
   main .bottom .future .futureForecast .temp {
     font-size: .9rem;
   }
+}
+
+.btn {
+  position: fixed;
+  top: 30vh;
+  left: 95%;
+  z-index: 10;
+  cursor: pointer;
+  padding: 1%;
+  background: url("https://img.icons8.com/material-sharp/50/000000/do-not-disturb-2.png") center;
+  background-size: cover;
+  border: none;
+}
+
+@media screen and (max-width: 750px) {
+  .btn {
+    padding: 4%;
+    top: 2vh;
+    left: 90%;
+  }
+}
+
+.lgt {
+  background: url("https://img.icons8.com/material-outlined/50/000000/sun.png") center;
+  background-size: cover;
+  border: none;
+  background-color: #e4ecf9;
 }
 /*# sourceMappingURL=main.css.map */
