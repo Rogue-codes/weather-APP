@@ -26,7 +26,7 @@ main{
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding: 4%;
+        padding: 2%;
         color: white;
         @media screen and (max-width:750px) {
             flex-direction: column;
@@ -42,7 +42,7 @@ main{
 
         .time{
             font-size: 4vw;
-            font-weight: 100;
+            font-weight: 500;
             @media screen and (max-width:750px) {
                 font-size: 2rem;
                 text-align: center;
