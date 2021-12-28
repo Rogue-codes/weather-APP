@@ -48,10 +48,10 @@ main{
                 text-align: center;
             }
 
-            .am-pm{
+            #am-pm{
                 font-size: 2vw;
                 @media screen and (max-width:750px) {
-                    font-size: 1rem;
+                    font-size: .5rem;
                 }
             }
         }
@@ -124,7 +124,8 @@ main{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        overflow-y: scroll;
+        overflow-x: scroll;
+        overflow-y: hidden;
 
         .todayForecast{
             height: 100%;
@@ -136,7 +137,7 @@ main{
             padding: 1%;
             display: flex;
             align-items: center;
-            @media screen and (max-width:750px) {
+            @media screen and (max-width:950px) {
                 min-width: 80%;
             }
             .icon{
@@ -151,15 +152,18 @@ main{
             }
             .data{
                 padding: 2%;
-            }
 
-            .monday{
-                padding: 2%;
-                text-align: center;
-                border-radius:15px ;
-                font-size: 1.2vw;
-                @media screen and (max-width:750px) {
-                    font-size: 1.2rem;
+                .night{
+                    font-size: 0.9rem;
+                }
+                .monday{
+                    padding: 2%;
+                    text-align: center;
+                    border-radius:15px ;
+                    font-size: 1.5vw;
+                    @media screen and (max-width:750px) {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }

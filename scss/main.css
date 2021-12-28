@@ -71,13 +71,13 @@ main .top .time {
   }
 }
 
-main .top .time .am-pm {
+main .top .time #am-pm {
   font-size: 2vw;
 }
 
 @media screen and (max-width: 750px) {
-  main .top .time .am-pm {
-    font-size: 1rem;
+  main .top .time #am-pm {
+    font-size: .5rem;
   }
 }
 
@@ -177,7 +177,8 @@ main .bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow-y: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 main .bottom .todayForecast {
@@ -196,7 +197,7 @@ main .bottom .todayForecast {
           align-items: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
   main .bottom .todayForecast {
     min-width: 80%;
   }
@@ -218,15 +219,19 @@ main .bottom .todayForecast .data {
   padding: 2%;
 }
 
-main .bottom .todayForecast .monday {
+main .bottom .todayForecast .data .night {
+  font-size: 0.9rem;
+}
+
+main .bottom .todayForecast .data .monday {
   padding: 2%;
   text-align: center;
   border-radius: 15px;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 
 @media screen and (max-width: 750px) {
-  main .bottom .todayForecast .monday {
+  main .bottom .todayForecast .data .monday {
     font-size: 1.2rem;
   }
 }
