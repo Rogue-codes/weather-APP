@@ -135,4 +135,3 @@ data.daily.forEach((day, idx) => {
 weatherForecastEl.innerHTML = otherDAyForecast
 }
     
-
