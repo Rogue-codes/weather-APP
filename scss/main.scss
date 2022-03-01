@@ -11,7 +11,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 }
 .darkBody{
@@ -37,7 +37,7 @@ main{
             flex-direction: column;
         }
         .topLeft{
-            height: auto;
+            height: 100%;
             flex: 8;
             @media screen and (max-width:750px) {
                 flex: 8;
@@ -115,7 +115,8 @@ main{
         color: white;
         background-color: rgba(10, 26, 26, 0.356);
         padding: 1%;
-        height: 40vh;
+        border: 6px solid red;
+        height: auto;
         position: relative;
         display: flex;
         justify-content: flex-start;

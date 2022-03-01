@@ -10,7 +10,7 @@
 body {
   background: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
 }
 
@@ -49,7 +49,7 @@ main .top {
 }
 
 main .top .topLeft {
-  height: auto;
+  height: 100%;
   -webkit-box-flex: 8;
       -ms-flex: 8;
           flex: 8;
@@ -170,7 +170,8 @@ main .bottom {
   color: white;
   background-color: rgba(10, 26, 26, 0.356);
   padding: 1%;
-  height: 40vh;
+  border: 6px solid red;
+  height: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
