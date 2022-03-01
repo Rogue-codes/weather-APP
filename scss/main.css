@@ -170,7 +170,6 @@ main .bottom {
   color: white;
   background-color: rgba(10, 26, 26, 0.356);
   padding: 1%;
-  border: 6px solid red;
   height: auto;
   position: relative;
   display: -webkit-box;
@@ -246,13 +245,11 @@ main .bottom .future {
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  border: 5px solid green;
 }
 
 main .bottom .future .futureForecast {
   background-color: rgba(22, 20, 21, 0.466);
   border-radius: 15px;
-  border: solid 5px red;
   margin-right: 2%;
   display: -webkit-box;
   display: -ms-flexbox;

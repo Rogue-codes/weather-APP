@@ -115,7 +115,6 @@ main{
         color: white;
         background-color: rgba(10, 26, 26, 0.356);
         padding: 1%;
-        border: 6px solid red;
         height: auto;
         position: relative;
         display: flex;
@@ -165,11 +164,9 @@ main{
         .future{
             display: flex;
             height: auto;
-            border: 5px solid green;
             .futureForecast{
                 background-color: rgba(22, 20, 21, 0.466);
                 border-radius: 15px;
-                border: solid 5px red;
                 margin-right: 2%;
                 display: flex;
                 height: auto;
