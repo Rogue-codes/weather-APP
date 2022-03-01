@@ -163,13 +163,15 @@ main{
         }
         .future{
             display: flex;
-            height: 80%;
+            height: auto;
+            border: 5px solid green;
             .futureForecast{
                 background-color: rgba(22, 20, 21, 0.466);
                 border-radius: 15px;
-                border: solid 1px white;
+                border: solid 5px red;
                 margin-right: 2%;
                 display: flex;
+                height: auto;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
